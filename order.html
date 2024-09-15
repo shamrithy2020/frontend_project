@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fbeefc;
+            padding: 2rem;
+        }
+
+        header {
+            background: #ff66b2;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        form {
+            background: #fff;
+            border: 1px solid #ff66b2;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        form h2 {
+            margin-bottom: 1rem;
+            color: #ff66b2;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #ff66b2;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3399;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            color: #ff66b2;
+            font-weight: bold;
+        }
+
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Place an Order</h1>
+    </header>
+    <div class="container">
+        <form id="orderForm">
+            <h2>Order Form</h2>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="art">Select Art Piece:</label>
+            <select id="art" name="art" required>
+                <option value="">-- Select an Art Piece --</option>
+                <option value="art-piece-1">Art Piece 1</option>
+                <option value="art-piece-2">Art Piece 2</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Order</button>
+        </form>
+        <div id="successMessage" class="success-message">
+            Your order has been successfully submitted. Thank you!
+        </div>
+        <a href="index.html" class="back-button">Back to Portfolio</a>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Optionally, you could reset the form or handle other actions here
+            // this.reset(); // Uncomment to reset the form
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A sample portfolio page showcasing my projects and skills.">
+
+
+<head>
+
+    <title>My Portfolio</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; align-items: center;text-align: center;}
+
+        header, footer { background-color: #f4f4f4; padding: 10px; text-align: center; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 50px; }
+        section { margin-bottom: 100px;list-style: none;margin-top: 100px; }
+        h3{margin-top: 100px;}
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid #afaeae; }
+         
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>Welcome to My Portfolio</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <section id="about"></section>
+        <h2>About Me</h2>
+        <p>Hello! I am Shamrithy a web developer with a passion for creating engaging and user-friendly websites.<br> 
+            Welcome to my portfolio, a passionate and dedicated web designer with a knack for crafting visually stunning and user-friendly websites. <br>
+            With a background in both graphic design and web development, <br>I bring a unique blend of creativity and technical expertise to every project.</p>
+        <img src="pic.jpg" alt="A photo of me"style="border-radius: 80%; width: 150px; height: 180px ,box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3)">
+   
+
+    <section id="projects"></section>
+        <h2>Projects</h2>
+
+        <ul style="list-style-type: none;">
+            <li><a href="https://candy.mexxar.co.uk/auth/login" target="_blank">Project 1</a>: Candy healthcare project </li>
+            <li><a href="https://primus.mexxar.co.uk/auth/login" target="_blank">Project 2</a>: Primus healthcare project </li>
+            <li><a href="https://hansongrey.mexxar.co.uk/auth/login" target="_blank">Project 3</a>: Hansongry healthcare project</li>
+        </ul>
+
+        <h3>Project Details</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project 1</td>
+                    <td>Abount Candy healthcare</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Project 2</td>
+                    <td>About Primus healthcare</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Project 3</td>
+                    <td>About Hansongry healthcare</td>
+                    <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+         </section>
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> My Portfolio.2024</p>
+    </footer>
+</body>
+</html>
